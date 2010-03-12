@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Extra sets of Chinese encodings
 License:    GPL+ or Artistic
@@ -34,11 +34,10 @@ one of them already.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -52,6 +51,3 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/lib/debug/usr/lib/perl5/vendor_perl/*
-/usr/src/debug/%{upstream_name}-%{upstream_version}/*
-
