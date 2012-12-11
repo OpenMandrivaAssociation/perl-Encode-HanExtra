@@ -51,3 +51,26 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.230.0-4
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 0.230.0-3mdv2011.0
++ Revision: 555798
+- rebuild for perl 5.12
+
+* Fri Mar 12 2010 Jérôme Quelin <jquelin@mandriva.org> 0.230.0-2mdv2010.1
++ Revision: 518455
+- ship debug files in -debug
+
+* Mon Jul 06 2009 Jérôme Quelin <jquelin@mandriva.org> 0.230.0-1mdv2010.0
++ Revision: 392895
+- adding missing buildrequires:
+- import perl-Encode-HanExtra
+
+
+* Mon Jul 06 2009 cpan2dist 0.23-1mdv
+- initial mdv release, generated with cpan2dist
