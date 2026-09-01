@@ -41,4 +41,3 @@ find %{buildroot} -type d -empty -delete
 
 %files
 %{perl_vendorarch}/*
-%{_mandir}/man3/*
